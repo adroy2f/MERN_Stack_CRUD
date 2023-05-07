@@ -1,19 +1,21 @@
 import Contact from '../model/contactRecordModel.js';
 
-// // Get all users
-// export const getContacts = async (request, response) => {
-//     try{
-//         const users = await User.find();
-//         response.status(200).json(users);
-//     }catch( error ){
-//         response.status(404).json({ message: error.message })
-//     }
-// }
+// Get all users
+export const getContacts = async (request, response) => {
+    try{
+        const contacts = await Contact.find();
+        response.status(200).json(contacts);
+    }catch( error ){
+        response.status(404).json({ message: error.message })
+    }
+}
 
 // Save data of the contact in database
 export const addContact = async (request, response) => {
-    const contact = request.body;
     
+    const contact = request.body;
+
+    console.log(contact);
     const newContact = new Contact(contact);
     try{
         await newContact.save();

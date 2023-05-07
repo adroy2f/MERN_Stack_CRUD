@@ -26,6 +26,7 @@ const AddContact = () => {
 
     const onValueChange = (e) => {
         setUser({...user, [e.target.name]: e.target.value})
+       // console.log(user);
     }
 
      const addContactDetails = async() => {

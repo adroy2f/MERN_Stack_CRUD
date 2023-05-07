@@ -14,7 +14,7 @@ function App() {
        <NavBar/>
       <Routes>
         <Route path="/" element={<AllContacts /> } />
-        <Route path="all" element={<AllContacts /> } />
+        <Route path="/all" element={<AllContacts /> } />
         <Route path="/add" element={<AddContact />} />
         <Route path="/edit/:id" element={<EditContact />} />
         <Route path='/*' element={<NotFound />} />

@@ -23,4 +23,6 @@ const PASSWORD = process.env.DB_PASSWORD;
 Connection(USERNAME,PASSWORD);
 
 const PORT = '8080';
-app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
+app.listen(PORT, (error) => {if (error) console.log(error);
+console.log("Server listening on PORT", PORT);});
+//https://adroy2f-fluffy-invention-qjgg4p99g9pc94p4-8080.preview.app.github.dev/
