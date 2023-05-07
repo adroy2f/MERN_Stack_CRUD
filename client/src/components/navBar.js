@@ -31,7 +31,7 @@ const NavBar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Phone directory
           </Typography>
-          <Button margin="10px" color="inherit" variant="outlined" href="/add"> Add </Button>
+          <Button style={{marginRight:10}} color="inherit" variant="outlined" href="/add"> Add </Button>
           <Button color="inherit" variant="outlined" href="/all"> All </Button>
         </Toolbar>
       </Header>
