@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // const url = 'http://localhost:3000';
 //const url = 'http://localhost:8080';
-const url ='https://adroy2f-fluffy-invention-qjgg4p99g9pc94p4-8080.preview.app.github.dev';
+const url ='https://crud-backend-vvir.onrender.com';
 
 export const getContacts = async (id) => {
     //id = id || '';
